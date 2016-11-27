@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  QLife.cpp
+  database.cpp
+  CalendarItems.cpp
+  Generating Code...
+database.obj : error LNK2019: unresolved external symbol sqlite3_close referenced in function "public: __cdecl Database::Database(char *)" (??0Database@@QEAA@PEAD@Z)
+database.obj : error LNK2019: unresolved external symbol sqlite3_exec referenced in function "public: void __cdecl Database::getAllEvents(void)" (?getAllEvents@Database@@QEAAXXZ)
+database.obj : error LNK2019: unresolved external symbol sqlite3_free referenced in function "public: void __cdecl Database::getAllEvents(void)" (?getAllEvents@Database@@QEAAXXZ)
+database.obj : error LNK2019: unresolved external symbol sqlite3_open referenced in function "public: __cdecl Database::Database(char *)" (??0Database@@QEAA@PEAD@Z)
+sqlite3.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\Matan\Documents\Visual Studio 2015\Projects\QLife\x64\Debug\QLife.exe : fatal error LNK1120: 4 unresolved externals
