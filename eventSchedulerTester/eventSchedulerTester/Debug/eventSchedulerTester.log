@@ -1,0 +1,9 @@
+﻿  eventScheduler.cpp
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(31): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(97): warning C4018: '<': signed/unsigned mismatch
+  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univac\eventSchedulerTester\Debug\eventSchedulerTester.exe
+  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univac\eventSchedulerTester\Debug\eventSchedulerTester.pdb (Partial PDB)
