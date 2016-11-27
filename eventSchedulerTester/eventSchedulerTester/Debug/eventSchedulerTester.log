@@ -1,9 +1,30 @@
-﻿  eventScheduler.cpp
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(25): warning C4018: '<': signed/unsigned mismatch
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(31): warning C4018: '<': signed/unsigned mismatch
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(34): warning C4018: '<': signed/unsigned mismatch
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(63): warning C4018: '<': signed/unsigned mismatch
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(72): warning C4018: '<': signed/unsigned mismatch
-c:\users\grant zeidler\univac\eventschedulertester\eventschedulertester\eventscheduler.cpp(97): warning C4018: '<': signed/unsigned mismatch
-  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univac\eventSchedulerTester\Debug\eventSchedulerTester.exe
-  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univac\eventSchedulerTester\Debug\eventSchedulerTester.pdb (Partial PDB)
+﻿  timeFunctions.cpp
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\timefunctions.cpp(22): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\timefunctions.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\timefunctions.cpp(52): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\timefunctions.cpp(89): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(54): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(94): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(99): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(107): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(113): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(114): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(138): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(144): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\main.cpp(149): warning C4018: '<': signed/unsigned mismatch
+  eventScheduler.cpp
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\eventscheduler.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\eventscheduler.cpp(31): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\eventscheduler.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\eventscheduler.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\grant zeidler\univackup\eventschedulertester\eventschedulertester\eventscheduler.cpp(90): warning C4018: '<': signed/unsigned mismatch
+  CalendarItems.cpp
+  Generating Code...
+  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univackup\eventSchedulerTester\Debug\eventSchedulerTester.exe
+  eventSchedulerTester.vcxproj -> C:\Users\Grant Zeidler\univackup\eventSchedulerTester\Debug\eventSchedulerTester.pdb (Partial PDB)
