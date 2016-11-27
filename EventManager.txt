@@ -1,0 +1,35 @@
+Event Manager Interactions
+
+ON STARTUP: Instantiate EventManager(startInterval, EndInterval) in GUI, In EventManager create database connection, Query All Events, All Todos, All Unscheduled Todos, close db connection,
+		Make Master List(insert todos into spaces between events, already been scheduled so should not be any conflicts), update pie chart (needs to know what size the interval is),
+		send master list to GUI with unscheduled todos
+
+
+ON CHANGE OF VIEW: SetStart(Start), SetEnd(End) in GUI for eventManager, create db connection, Query All Events, All Todos, All Unscheduled TOdos, Close db connection,
+	 	Make Master List (same as before), update pie chart, send master list to gui with unscheduled events as well as unscheduled todos
+
+
+ON EDIT EVENT:Send new event information to the event manager, call 
+
+ON ADD EVENT: Send event information to event manager, create event, 
+		IF EVENT IS IN THE INTERVAL:add to the database, get the ID from that insert,  assign the new event that ID, 
+		add the event to the master list,  send new master list to the gui 
+  		ELSE: add to the database, update GUI
+
+ON EDIT SINGLE EVENT: Send new event information to the event manager
+		POSSIBLE OPTIONS:database.editEvent(event), query all events, todos, unscheduled todos, master list, update gui
+		OTHER:Add Skips event.number(), update database, remove event from master list, 
+			create event with new attributes. Set repeat interval (0), set numRepeats(0), setSkips({}), add new event to database.
+			setID to the ID of that insert
+			IF IN INTERVAL, add to masterlist, update database
+			ELSE, update database
+
+ON EDIT ALL EVENT: Send new event information to event manager,  database.editAllEvent(event), for all elements in the master list with ID=event.iD, set attributes to new attributes,
+			update GUI
+
+DELETE SINGLE EVENT: Send event to event manager, database.deleteSingleEvent(event), delete this event from the masterlist, update GUI
+
+DELETE ALL EVENT:Send event to Event manager,database.deleteAllEvent(event), for all events in masterlist with ID=event.ID, delete from the masterlist, update GUI
+
+
+

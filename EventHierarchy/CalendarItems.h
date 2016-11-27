@@ -2,7 +2,7 @@
  * Events.h
  *
  *  Created on: Nov 3, 2016
- *
+ *      
  */
 
 #include <string>
@@ -18,7 +18,7 @@ public:
 
 	CalendarItem(int id, string name, string summary, time_t start, time_t end, string type);
 	virtual ~CalendarItem();
-
+	
 	string getName() const;
 	string getSummary() const;
 	time_t getStart() const;
@@ -33,6 +33,7 @@ public:
 	void setID(int id);
 
 
+
 private:
 	string name;
 	string summary;
@@ -42,7 +43,7 @@ private:
 	int id;
 };
 
-class Event : public CalendarItem {
+class Event : public CalendarItem{ 
 public:
 	Event(int id, string name, string summary, time_t start, time_t end, int repeatInterval, int numRepeats, string type, string location, int number, vector <int> skip);
 	string getLocation() const;
@@ -52,9 +53,10 @@ public:
 	vector <int> getSkips() const;
 	void addSkips(int skips);
 
+	void setNumber(int num);
 	void setLocation(string location);
 	void setSkips(vector <int> skip);
-	void setNumRepeats(int numRepeat);
+	void setNumRepeats(int numRepeat); 
 	void setRepeatInterval(int repeatInterval);
 
 private:
@@ -63,30 +65,28 @@ private:
 	string location;
 	int number;
 	vector <int> skip;
-
+	
 };
 
 class ToDo : public CalendarItem {
 public:
-	ToDo(int id, string name, string summary, time_t start, time_t end, string type,
-		time_t viableStart, time_t viableEnd, int estimatedTime, int weight, bool scheduled, bool pinned);
+	ToDo(int id, string name, string summary, time_t start, time_t end, string type, 
+		time_t viableEnd, int estimatedTime, int weight, bool scheduled, bool pinned);
 	int getEstimatedTime() const;
-	time_t getViableStart() const;
 	time_t getViableEnd() const;
 	int getWeight() const;
 	bool getScheduled() const;
 	bool getPinned() const;
-
 	void setEstimatedTime(int estimatedTime);
-	void setViableStart(time_t viableStart);
 	void setViableEnd(time_t viableEnd);
 	void setWeight(int weight);
 	void setScheduled(bool scheduled);
 	void setPinned(bool pinned);
 
+	int getNumber() const;
+
 private:
 	int estimatedTime;
-	time_t viableStart;
 	time_t viableEnd;
 	int weight;
 	bool scheduled;

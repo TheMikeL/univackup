@@ -39,6 +39,12 @@
     <ClInclude Include="EditToDo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CalendarItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PieChartAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -70,6 +76,18 @@
     <ClCompile Include="EditToDo.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="CalendarItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PieChartAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PieChart.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PieChart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
@@ -84,6 +102,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="EditEvent.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddToDo.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditToDo.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

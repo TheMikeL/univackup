@@ -20,9 +20,7 @@ Database::Database(char* filename)
 		throw DatabaseException("SQL ERROR, CANT OPEN DATABASE");
 		sqlite3_close(db);
 	}
-	else { 
-		std::cout << "Opened DB succesfully" << std::endl;
-	}
+
 }
 vector <int> stringToIntArr(string str) {
 	std::istringstream stream (str);
@@ -138,7 +136,7 @@ string Database::prepareAddTodo(const ToDo& todo)const {
 	buffer << "insert into ToDos values (null, " <<
 		todo.getName() << "," << todo.getSummary() << "," << todo.getStart()
 		<< "," << todo.getEnd() << "," << todo.getType() << "," 
-		<< todo.getViableStart() << "," << todo.getViableEnd() << "," << todo.getEstimatedTime()
+		<< todo.getViableEnd() << "," << todo.getEstimatedTime()
 		<< "," <<todo.getWeight() << "," << todo.getScheduled() << "," << todo.getPinned() <<");";
 
 	return buffer.str();
@@ -215,14 +213,13 @@ ToDo Database::rowToTodo(sqlite3_stmt& ppStmt)const {
 	int start = sqlite3_column_int(&ppStmt, 3);
 	int end = sqlite3_column_int(&ppStmt, 4);
 	string type = (char*)sqlite3_column_text(&ppStmt, 5);
-	int viableStart = sqlite3_column_int(&ppStmt, 6);
-	int viableEnd = sqlite3_column_int(&ppStmt, 7);
-	int estimatedTime = sqlite3_column_int(&ppStmt, 8);
-	int weight = sqlite3_column_int(&ppStmt, 9);
-	bool scheduled = (bool)sqlite3_column_int(&ppStmt, 10);
-	bool pinned = sqlite3_column_int(&ppStmt, 11);
+	int viableEnd = sqlite3_column_int(&ppStmt, 6);
+	int estimatedTime = sqlite3_column_int(&ppStmt, 7);
+	int weight = sqlite3_column_int(&ppStmt, 8);
+	bool scheduled = (bool)sqlite3_column_int(&ppStmt, 9);
+	bool pinned = sqlite3_column_int(&ppStmt, 10);
 	//Create the event
-	ToDo todo = ToDo(ID, name, summary, start, end, type, viableStart,
+	ToDo todo = ToDo(ID, name, summary, start, end, type,
 		viableEnd, estimatedTime, weight, scheduled, pinned);
 	return todo;
 }
@@ -259,7 +256,7 @@ void Database::addTodo(const ToDo& todo) const{
 }
 
 vector <ToDo> Database::getAllTodos() const{
-	string all = "select * from todos t order by t.viable_start asc;";
+	string all = "select * from todos t order by t.start_time asc;";
 	vector <ToDo> todos=queryTodos(all);
 
 	return todos;
@@ -278,8 +275,7 @@ vector<ToDo> Database::getScheduledTodos(time_t start, time_t end)const {
 
 vector <ToDo> Database::getUnscheduledTodos(time_t start, time_t end) const{
 	std::ostringstream sql;
-	sql << "select * from todos t where (t.viable_start>=" << start << " and t.viable_start< " << end
-		<< ") OR (t.viable_end> " << start << " and t.viable_end< " << end << ") and t.scheduled=0 order by t.viable_start asc;";
+	sql << "select * from todos t where t.viable_End>=" << start << " and t.viable_end<= " << end << " and t.scheduled=0 order by t.viable_end asc;";
 	vector <ToDo> unscheduled = queryTodos(sql.str());
 	return unscheduled;
 }
@@ -297,8 +293,8 @@ void Database::editTodo(const ToDo& todo)const {
 	std::ostringstream sql;
 	sql << "update todos set name=" << todo.getName() << ", summary=" << todo.getSummary() <<
 		", start_time=" << todo.getStart() << ", end_time=" << todo.getEnd() << 
-		", type=" << todo.getType() << ",viable_start= " << todo.getViableStart() <<
-		", viable_end=" << todo.getViableEnd() << ",estimated_time= " << todo.getEstimatedTime() <<
+		", type=" << todo.getType() << ", viable_end=" << todo.getViableEnd() << 
+		",estimated_time= " << todo.getEstimatedTime() <<
 		", weight=" << todo.getWeight() <<", scheduled=" << todo.getScheduled() << ", pinned= " << 
 		todo.getPinned() << " "
 		<< "where ID= " << todo.getId() << ";";

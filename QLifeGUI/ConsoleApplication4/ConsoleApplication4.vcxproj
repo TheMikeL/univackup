@@ -147,12 +147,14 @@
     <ClInclude Include="AddToDo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CalendarItems.h" />
     <ClInclude Include="EditEvent.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="EditToDo.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="PieChartAnalysis.h" />
     <ClInclude Include="QLife.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -166,10 +168,14 @@
     <ClCompile Include="AddEvent1.cpp" />
     <ClCompile Include="AddToDo.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CalendarItems.cpp" />
     <ClCompile Include="EditToDo.cpp" />
+    <ClCompile Include="PieChart.h" />
+    <ClCompile Include="PieChartAnalysis.cpp" />
     <ClCompile Include="QLifeGUI.cpp" />
     <ClCompile Include="EditEvent.cpp" />
     <ClCompile Include="QLife.cpp" />
+    <ClCompile Include="PieChart.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

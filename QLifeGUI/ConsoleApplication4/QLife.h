@@ -104,11 +104,13 @@ namespace ConsoleApplication4 {
 			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
 			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
-				2));
+				0.25));
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint2 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
-				3));
+				0.25));
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint3 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
-				5));
+				0.25));
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint4 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+				0.25));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -279,7 +281,7 @@ namespace ConsoleApplication4 {
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
 				80)));
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				91)));
+				94)));
 			this->tableLayoutPanel1->Location = System::Drawing::Point(12, 140);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 4;
@@ -315,9 +317,11 @@ namespace ConsoleApplication4 {
 			dataPoint1->Label = L"Study";
 			dataPoint2->Label = L"Social";
 			dataPoint3->Label = L"Exercise";
+			dataPoint4->Label = L"Sleep";
 			series1->Points->Add(dataPoint1);
 			series1->Points->Add(dataPoint2);
 			series1->Points->Add(dataPoint3);
+			series1->Points->Add(dataPoint4);
 			this->chart1->Series->Add(series1);
 			this->chart1->Size = System::Drawing::Size(243, 282);
 			this->chart1->TabIndex = 20;
@@ -337,14 +341,14 @@ namespace ConsoleApplication4 {
 			// monthToolStripMenuItem
 			// 
 			this->monthToolStripMenuItem->Name = L"monthToolStripMenuItem";
-			this->monthToolStripMenuItem->Size = System::Drawing::Size(85, 4);
+			this->monthToolStripMenuItem->Size = System::Drawing::Size(86, 4);
 			// 
 			// weekToolStripMenuItem
 			// 
 			this->weekToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
 			this->weekToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
 			this->weekToolStripMenuItem->Name = L"weekToolStripMenuItem";
-			this->weekToolStripMenuItem->Size = System::Drawing::Size(85, 28);
+			this->weekToolStripMenuItem->Size = System::Drawing::Size(86, 28);
 			this->weekToolStripMenuItem->Text = L"Week";
 			this->weekToolStripMenuItem->Click += gcnew System::EventHandler(this, &QLife::weekToolStripMenuItem_Click);
 			// 
@@ -353,7 +357,7 @@ namespace ConsoleApplication4 {
 			this->monthToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
 			this->monthToolStripMenuItem1->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
 			this->monthToolStripMenuItem1->Name = L"monthToolStripMenuItem1";
-			this->monthToolStripMenuItem1->Size = System::Drawing::Size(85, 28);
+			this->monthToolStripMenuItem1->Size = System::Drawing::Size(86, 28);
 			this->monthToolStripMenuItem1->Text = L"Month";
 			this->monthToolStripMenuItem1->Click += gcnew System::EventHandler(this, &QLife::monthToolStripMenuItem1_Click);
 			// 
@@ -362,7 +366,7 @@ namespace ConsoleApplication4 {
 			this->analysisToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
 			this->analysisToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
 			this->analysisToolStripMenuItem->Name = L"analysisToolStripMenuItem";
-			this->analysisToolStripMenuItem->Size = System::Drawing::Size(85, 28);
+			this->analysisToolStripMenuItem->Size = System::Drawing::Size(86, 22);
 			this->analysisToolStripMenuItem->Text = L"Analysis";
 			this->analysisToolStripMenuItem->Click += gcnew System::EventHandler(this, &QLife::analysisToolStripMenuItem_Click);
 			// 
@@ -371,7 +375,7 @@ namespace ConsoleApplication4 {
 			this->fixUpToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
 			this->fixUpToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
 			this->fixUpToolStripMenuItem->Name = L"fixUpToolStripMenuItem";
-			this->fixUpToolStripMenuItem->Size = System::Drawing::Size(85, 28);
+			this->fixUpToolStripMenuItem->Size = System::Drawing::Size(86, 28);
 			this->fixUpToolStripMenuItem->Text = L"Fix Up";
 			this->fixUpToolStripMenuItem->Click += gcnew System::EventHandler(this, &QLife::fixUpToolStripMenuItem_Click);
 			// 
@@ -382,11 +386,11 @@ namespace ConsoleApplication4 {
 				this->monthToolStripMenuItem,
 					this->weekToolStripMenuItem, this->monthToolStripMenuItem1, this->analysisToolStripMenuItem, this->fixUpToolStripMenuItem, this->createToDoToolStripMenuItem
 			});
-			this->menuStrip2->Location = System::Drawing::Point(929, 0);
+			this->menuStrip2->Location = System::Drawing::Point(928, 0);
 			this->menuStrip2->Margin = System::Windows::Forms::Padding(0, 10, 0, 10);
 			this->menuStrip2->Name = L"menuStrip2";
 			this->menuStrip2->Padding = System::Windows::Forms::Padding(5, 4, 0, 4);
-			this->menuStrip2->Size = System::Drawing::Size(96, 632);
+			this->menuStrip2->Size = System::Drawing::Size(97, 632);
 			this->menuStrip2->TabIndex = 1;
 			this->menuStrip2->Text = L"menuStrip2";
 			this->menuStrip2->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &QLife::menuStrip2_ItemClicked);
@@ -396,7 +400,7 @@ namespace ConsoleApplication4 {
 			this->createToDoToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13));
 			this->createToDoToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 20, 0, 20);
 			this->createToDoToolStripMenuItem->Name = L"createToDoToolStripMenuItem";
-			this->createToDoToolStripMenuItem->Size = System::Drawing::Size(85, 26);
+			this->createToDoToolStripMenuItem->Size = System::Drawing::Size(86, 26);
 			this->createToDoToolStripMenuItem->Text = L"+ To-Do";
 			this->createToDoToolStripMenuItem->Click += gcnew System::EventHandler(this, &QLife::createToDoToolStripMenuItem_Click);
 			// 
@@ -523,19 +527,46 @@ namespace ConsoleApplication4 {
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 		AddEvent1 ^ addevent = gcnew AddEvent1();
 		addevent->Show();
-				
+
 	}
 	private: System::Void analysisToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+		
+			
+		this->chart1->Series->Clear();
+		System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+			0.20));
+		System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint2 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+			0.20));
+		System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint3 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+			0.10));
+		System::Windows::Forms::DataVisualization::Charting::DataPoint^  dataPoint4 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+			0.5));
+		System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+		series1->ChartArea = L"ChartArea1";
+		series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Pie;
+		series1->Legend = L"Legend1";
+		series1->Name = L"Series1";
+		dataPoint1->Label = L"Study";
+		dataPoint2->Label = L"Social";
+		dataPoint3->Label = L"Exercise";
+		dataPoint4->Label = L"Sleep";
+		series1->Points->Add(dataPoint1);
+		series1->Points->Add(dataPoint2);
+		series1->Points->Add(dataPoint3);
+		series1->Points->Add(dataPoint4);
+		this->chart1->Series->Add(series1);
+		
+
 	};
 	private: System::Void label11_Click(System::Object^  sender, System::EventArgs^  e) {
 		/*if(To-dos.amount=0){
-			label11->Text = "You should do something!"
+		label11->Text = "You should do something!"
 		}
 		*/
 	}
 	private: System::Void label12_Click(System::Object^  sender, System::EventArgs^  e) {
 		/*if(No upcoming events){
-			label12->Text = "Nothing coming up, enjoy yourself!"
+		label12->Text = "Nothing coming up, enjoy yourself!"
 		}
 		*/
 	}
@@ -550,23 +581,27 @@ namespace ConsoleApplication4 {
 
 	private: System::Void createToDoToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 		AddToDo ^ addtodo = gcnew AddToDo();
-		addtodo -> Show();
+		addtodo->Show();
 	}
-private: System::Void fixUpToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-	Button^ myButton = gcnew Button();
-	myButton->BackColor = System::Drawing::SystemColors::ActiveCaption;
-	myButton->Dock = DockStyle::Fill;
-	myButton->ForeColor = Color::Wheat;
-	myButton->Click += gcnew System::EventHandler(this, &QLife::myButton_Click);
-	myButton->Text = "CMPE 320";
-	myButton->Margin = System::Windows::Forms::Padding(0, 0, 0, 0); 
-	tableLayoutPanel2->Controls->Add(myButton);
-	tableLayoutPanel2->SetCellPosition(myButton, TableLayoutPanelCellPosition(5, 3));
-	tableLayoutPanel2->SetRowSpan(myButton, 2);
+	private: System::Void fixUpToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+
+		tableLayoutPanel2->Controls->Clear();
+		Button^ myButton = gcnew Button();
+		myButton->BackColor = System::Drawing::SystemColors::ActiveCaption;
+		myButton->Dock = DockStyle::Fill;
+		myButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+		myButton->ForeColor = Color::Wheat;
+		myButton->Click += gcnew System::EventHandler(this, &QLife::myButton_Click);
+		myButton->Text = "CMPE 320";
+		myButton->Margin = System::Windows::Forms::Padding(0, 0, 0, 0);
+		tableLayoutPanel2->Controls->Add(myButton);
+		tableLayoutPanel2->SetCellPosition(myButton, TableLayoutPanelCellPosition(5, 3));
+		tableLayoutPanel2->SetRowSpan(myButton, 2);
 	}
-private: System::Void myButton_Click(System::Object^  sender, System::EventArgs^  e) {
-	AddEvent1 ^ addevent = gcnew AddEvent1();
-	addevent->Show();
+	private: System::Void myButton_Click(System::Object^  sender, System::EventArgs^  e) {
+		EditEvent ^ editevent = gcnew EditEvent();
+		editevent->Show();
+	}
+	}
+	;
 }
-}
-	;}

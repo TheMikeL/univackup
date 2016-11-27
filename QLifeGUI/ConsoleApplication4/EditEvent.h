@@ -44,14 +44,16 @@ namespace ConsoleApplication4 {
 	private: System::Windows::Forms::ComboBox^  comboBox3;
 	private: System::Windows::Forms::ComboBox^  comboBox2;
 	private: System::Windows::Forms::ComboBox^  comboBox1;
-	private: System::Windows::Forms::TextBox^  textBox1;
+
 	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Label^  label6;
+
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Label^  label6;
+	private: System::Windows::Forms::Label^  label7;
 
 	private:
 		/// <summary>
@@ -75,14 +77,14 @@ namespace ConsoleApplication4 {
 			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// textBox3
@@ -161,7 +163,7 @@ namespace ConsoleApplication4 {
 				L"00", L"05", L"10", L"15", L"20", L"25", L"30",
 					L"35", L"40", L"45", L"50", L"55", L"60"
 			});
-			this->comboBox2->Location = System::Drawing::Point(212, 307);
+			this->comboBox2->Location = System::Drawing::Point(212, 309);
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(36, 21);
 			this->comboBox2->TabIndex = 26;
@@ -178,32 +180,15 @@ namespace ConsoleApplication4 {
 			this->comboBox1->Size = System::Drawing::Size(38, 21);
 			this->comboBox1->TabIndex = 25;
 			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(153, 370);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(100, 20);
-			this->textBox1->TabIndex = 24;
-			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->button1->Location = System::Drawing::Point(81, 415);
+			this->button1->Location = System::Drawing::Point(80, 356);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(154, 33);
 			this->button1->TabIndex = 23;
 			this->button1->Text = L"Change Event";
 			this->button1->UseVisualStyleBackColor = true;
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->label6->Location = System::Drawing::Point(28, 370);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(59, 20);
-			this->label6->TabIndex = 22;
-			this->label6->Text = L"Weight";
 			// 
 			// label5
 			// 
@@ -211,9 +196,9 @@ namespace ConsoleApplication4 {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label5->Location = System::Drawing::Point(28, 307);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(76, 20);
+			this->label5->Size = System::Drawing::Size(80, 20);
 			this->label5->TabIndex = 21;
-			this->label5->Text = L"End Time";
+			this->label5->Text = L"End Time:";
 			// 
 			// label4
 			// 
@@ -221,9 +206,9 @@ namespace ConsoleApplication4 {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label4->Location = System::Drawing::Point(28, 255);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(82, 20);
+			this->label4->Size = System::Drawing::Size(86, 20);
 			this->label4->TabIndex = 20;
-			this->label4->Text = L"Start Time";
+			this->label4->Text = L"Start Time:";
 			// 
 			// label3
 			// 
@@ -231,9 +216,9 @@ namespace ConsoleApplication4 {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label3->Location = System::Drawing::Point(28, 153);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(89, 20);
+			this->label3->Size = System::Drawing::Size(93, 20);
 			this->label3->TabIndex = 19;
-			this->label3->Text = L"Ðescription";
+			this->label3->Text = L"Ðescription:";
 			// 
 			// label2
 			// 
@@ -241,9 +226,9 @@ namespace ConsoleApplication4 {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label2->Location = System::Drawing::Point(28, 101);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(88, 20);
+			this->label2->Size = System::Drawing::Size(92, 20);
 			this->label2->TabIndex = 18;
-			this->label2->Text = L"Event Type";
+			this->label2->Text = L"Event Type:";
 			// 
 			// label1
 			// 
@@ -251,16 +236,38 @@ namespace ConsoleApplication4 {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label1->Location = System::Drawing::Point(28, 48);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(38, 20);
+			this->label1->Size = System::Drawing::Size(42, 20);
 			this->label1->TabIndex = 17;
-			this->label1->Text = L"Title";
+			this->label1->Text = L"Title:";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label6->Location = System::Drawing::Point(197, 307);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(13, 20);
+			this->label6->TabIndex = 34;
+			this->label6->Text = L":";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label7->Location = System::Drawing::Point(197, 252);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(13, 20);
+			this->label7->TabIndex = 35;
+			this->label7->Text = L":";
 			// 
 			// EditEvent
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->ClientSize = System::Drawing::Size(350, 477);
+			this->ClientSize = System::Drawing::Size(350, 412);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->comboBox7);
 			this->Controls->Add(this->textBox2);
@@ -270,9 +277,7 @@ namespace ConsoleApplication4 {
 			this->Controls->Add(this->comboBox3);
 			this->Controls->Add(this->comboBox2);
 			this->Controls->Add(this->comboBox1);
-			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);

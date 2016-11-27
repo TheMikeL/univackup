@@ -37,6 +37,7 @@ void CalendarItem::setID(int newId)
 {
 	id = newId;
 }
+
 void CalendarItem::setName(string newName) {
 	name = newName;
 }
@@ -98,12 +99,16 @@ void Event::setNumRepeats(int newNumRepeat) {
 void Event::setRepeatInterval(int newRepeatInterval) {
 	repeatInterval = newRepeatInterval;
 }
+void Event::setNumber(int num) {
+	number = num;
+}
+
 //------------------------------------------------------------------------------------------------------------------------
 // ToDo constructor and accessors
 
 ToDo::ToDo(int id, string name, string summary, time_t start, time_t end,
-	string type, time_t viableStart, time_t viableEnd, int estimatedTime, int weight, bool scheduled, bool pinned) :
-		CalendarItem(id, name, summary, start, end, type), estimatedTime(estimatedTime), viableStart(viableStart),
+	string type, time_t viableEnd, int estimatedTime, int weight, bool scheduled, bool pinned) :
+		CalendarItem(id, name, summary, start, end, type), estimatedTime(estimatedTime),
 		viableEnd(viableEnd), weight(weight), scheduled(scheduled), pinned(pinned) { }
 
 
@@ -112,9 +117,7 @@ ToDo::ToDo(int id, string name, string summary, time_t start, time_t end,
 int ToDo::getEstimatedTime() const {
 	return estimatedTime;
 }
-time_t ToDo::getViableStart() const {
-	return viableStart;
-}
+
 time_t ToDo::getViableEnd() const {
 	return viableEnd;
 }
@@ -131,9 +134,7 @@ bool ToDo::getPinned() const {
 void ToDo::setEstimatedTime(int newEstimate) {
 	estimatedTime = newEstimate;
 }
-void ToDo::setViableStart(time_t newViableStart) {
-	viableStart = newViableStart;
-}
+
 void ToDo::setViableEnd(time_t newViableEnd) {
 	viableEnd = newViableEnd;
 }
@@ -147,10 +148,14 @@ void ToDo::setPinned(bool newPinned) {
 	pinned = newPinned;
 }
 
+int ToDo::getNumber()const {
+	return -1;
+}
 ostream & operator<<(ostream & out, const Event & event)
 {
 	out << "ID= " << event.getId() << endl
 		<< "Name= " << event.getName() << endl <<
+		"Summary= " << event.getSummary() << endl <<
 		"Start= " << event.getStart() << endl <<
 		"End= " << event.getEnd() << endl <<
 		"RepeatInterval= " << event.getRepeatInterval() << endl <<
@@ -167,7 +172,6 @@ ostream & operator<<(ostream & out, const ToDo & todo)
 		"Start= " << todo.getStart() << endl <<
 		"End= " << todo.getEnd() << endl <<
 		"EstimatedTime= " << todo.getEstimatedTime() << endl <<
-		"ViableStart= " << todo.getViableStart() << endl <<
 		"ViableEnd= " << todo.getViableEnd() << endl <<
 		"Weight= " << todo.getWeight() << endl <<
 		"Scheduled= " << todo.getScheduled() << endl <<
