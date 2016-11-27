@@ -1,15 +1,2 @@
-﻿  EventManager.cpp
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(41): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(77): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(116): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(141): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(170): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(196): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(212): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(253): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(283): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(341): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(344): warning C4018: '<': signed/unsigned mismatch
-c:\users\matan\documents\visual studio 2015\projects\qlife\qlife\eventmanager.cpp(345): warning C4018: '<': signed/unsigned mismatch
-  QLife.vcxproj -> C:\Users\Matan\documents\visual studio 2015\Projects\QLife\Debug\QLife.exe
-  QLife.vcxproj -> C:\Users\Matan\documents\visual studio 2015\Projects\QLife\Debug\QLife.pdb (Full PDB)
+﻿  QLife.vcxproj -> C:\Users\Grant Zeidler\univackup\masterSoln\Debug\QLife.exe
+  QLife.vcxproj -> C:\Users\Grant Zeidler\univackup\masterSoln\Debug\QLife.pdb (Full PDB)

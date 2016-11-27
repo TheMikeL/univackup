@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\grant zeidler\univackup\movember\movember\main.cpp(9): warning C4018: '<': signed/unsigned mismatch
+  Movember.vcxproj -> C:\Users\Grant Zeidler\univackup\Movember\Debug\Movember.exe
+  Movember.vcxproj -> C:\Users\Grant Zeidler\univackup\Movember\Debug\Movember.pdb (Partial PDB)

@@ -1,6 +1,10 @@
-﻿  timeFunctions.cpp
-c:\users\grant zeidler\univackup\letsgo\letsgo\timefunctions.h(2): fatal error C1083: Cannot open include file: 'CalendarItems.h': No such file or directory
-  main.cpp
-  eventScheduler.cpp
-c:\users\grant zeidler\univackup\letsgo\letsgo\eventscheduler.h(5): fatal error C1083: Cannot open include file: 'CalendarItems.h': No such file or directory
-  Generating Code...
+﻿database.obj : error LNK2019: unresolved external symbol _sqlite3_close referenced in function "public: __thiscall Database::Database(char *)" (??0Database@@QAE@PAD@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_exec referenced in function "public: void __thiscall Database::addEvent(class Event const &)const " (?addEvent@Database@@QBEXABVEvent@@@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_last_insert_rowid referenced in function "public: int __thiscall Database::getLastRowID(void)const " (?getLastRowID@Database@@QBEHXZ)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_open_v2 referenced in function "public: __thiscall Database::Database(char *)" (??0Database@@QAE@PAD@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_prepare_v2 referenced in function "private: class std::vector<class Event,class std::allocator<class Event> > __thiscall Database::queryEvents(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)const " (?queryEvents@Database@@ABE?AV?$vector@VEvent@@V?$allocator@VEvent@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_step referenced in function "private: class std::vector<class Event,class std::allocator<class Event> > __thiscall Database::queryEvents(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)const " (?queryEvents@Database@@ABE?AV?$vector@VEvent@@V?$allocator@VEvent@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_column_int referenced in function "private: class Event __thiscall Database::rowToEvent(struct sqlite3_stmt &)const " (?rowToEvent@Database@@ABE?AVEvent@@AAUsqlite3_stmt@@@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_column_text referenced in function "private: class Event __thiscall Database::rowToEvent(struct sqlite3_stmt &)const " (?rowToEvent@Database@@ABE?AVEvent@@AAUsqlite3_stmt@@@Z)
+database.obj : error LNK2019: unresolved external symbol _sqlite3_finalize referenced in function "private: class std::vector<class Event,class std::allocator<class Event> > __thiscall Database::queryEvents(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)const " (?queryEvents@Database@@ABE?AV?$vector@VEvent@@V?$allocator@VEvent@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z)
+C:\Users\Grant Zeidler\univackup\Letsgo\Debug\Letsgo.exe : fatal error LNK1120: 9 unresolved externals
